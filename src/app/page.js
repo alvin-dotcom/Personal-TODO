@@ -1,10 +1,10 @@
-'use client'
+'use client';
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { Vortex } from "../components/ui/vortex"; // Import Vortex component
+import { Vortex } from "../components/ui/vortex"; 
 import { motion } from "framer-motion";
-import { FiCheckCircle } from "react-icons/fi"; // Tick icon
-import { FaTrash } from "react-icons/fa"; // Trash icon
+import { FiCheckCircle } from "react-icons/fi";
+import { FaTrash } from "react-icons/fa"; 
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
@@ -157,7 +157,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 z-10 w-[90%]"
+          className="flex-grow overflow-y-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 z-10 w-[80%]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
